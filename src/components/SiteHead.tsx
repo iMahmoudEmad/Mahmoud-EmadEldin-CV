@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export const SiteHead = () => {
-  const author = "Mahmoud EmadEldin";
+  const author = "Mahmoud Emad";
   const position = "Frontend Engineer";
   const username = "@imahmoudemad";
 
@@ -28,7 +28,7 @@ export const SiteHead = () => {
       <meta name="apple-mobile-web-app-title" content={author} />
       <meta name="description" content={position + " player"} />
 
-      <title>Mahmoud EmadEldin</title>
+      <title>Mahmoud Emad</title>
       <link rel="shortcut icon" href="/favicon.ico" />
     </Head>
   );

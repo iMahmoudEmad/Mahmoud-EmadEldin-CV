@@ -1,64 +1,39 @@
 import Link from "next/link";
 import styles from "./Footer.module.scss";
 import { Inter } from "next/font/google";
+import { socialMedia } from "@/constants/socialLinks";
+import { pages } from "@/constants/pages";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const Footer = () => {
   const year = new Date().getFullYear();
-  const links = [
-    {
-      name: "home",
-      link: "/",
-      id: "home",
-    },
-    {
-      name: "skills",
-      link: "skills",
-      id: "skills",
-    },
-    {
-      name: "experience",
-      link: "experience",
-      id: "experience",
-    },
-    {
-      name: "projects",
-      link: "projects",
-      id: "projects",
-    },
-    {
-      name: "CV",
-      link: "cv",
-      id: "cv",
-    },
-  ];
 
   return (
     <footer className={styles.footer + " " + inter.className}>
       <div className="full-w">
         <div className={"flex jc-sb ai-center " + styles.pages}>
           <ul>
-            {links.map((link) => (
-              <li key={link.id}>
-                <Link href={link.link} id={link.id}>
-                  {link.name}
+            {pages.map((page) => (
+              <li key={page.id}>
+                <Link href={page.link} id={page.id}>
+                  {page.name}
                 </Link>
               </li>
             ))}
           </ul>
           <ul>
-            <li>
-              <Link href="/">Twitter</Link>
-            </li>
-            <li>
-              <Link href="/">LinkedIn</Link>
-            </li>
-            <li>
-              <Link href="/">Github</Link>
-            </li>
+
+          {socialMedia.map((social) => (
+              <li key={social.id}>
+                <Link href={social.link} target="_blank" id={social.id}>
+                  {social.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
+        
         <div className={styles.copyrights}>
           <h2 className="text-start">
             © {year}
