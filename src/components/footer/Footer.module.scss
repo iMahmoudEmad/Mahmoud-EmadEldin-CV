@@ -1,0 +1,48 @@
+.footer {
+  color: #333;
+
+  .pages,
+  .copyrights {
+    padding-block-start: 1.5rem;
+  }
+
+  .pages {
+    border-top: 1px solid var(--border-color);
+  }
+
+  .title{
+    margin-inline-start: .5rem;
+  }
+
+  .copyrights {
+    font-size: .875rem;
+    font-weight: 500;
+    margin-block-end: 1.5rem;
+
+    h2 {
+      font-size: inherit;
+      font-weight: normal;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .pages {
+      ul {
+        gap: 1rem;
+
+        li {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .pages {
+      ul:first-of-type {
+        flex-basis: 100%;
+        margin-block-end: 1.5rem;
+      }
+    }
+  }
+}
