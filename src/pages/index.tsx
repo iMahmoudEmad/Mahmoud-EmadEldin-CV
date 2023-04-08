@@ -11,7 +11,9 @@ export default function Home() {
       <SiteHead />
       <Navbar />
 
-      <main className={"main " + inter.className}></main>
+      <main className={"main full-w " + inter.className}>
+        <img src="https://joebell.co.uk/_image?q=80&f=webp&w=916&h=1328&href=%2Fassets%2Fimage%2Fprofile.jpg" alt="" />
+      </main>
 
       <Footer />
     </>
