@@ -23,7 +23,6 @@ export const Footer = () => {
             ))}
           </ul>
           <ul>
-
           {socialMedia.map((social) => (
               <li key={social.id}>
                 <Link href={social.link} target="_blank" id={social.id}>

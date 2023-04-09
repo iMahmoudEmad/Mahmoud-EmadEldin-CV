@@ -1,0 +1,61 @@
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+
+  .personImage,
+  .personInfo {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .personImage {
+    aspect-ratio: auto 916 / 1328;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      border: 1px solid var(--border-color);
+    }
+  }
+
+  .personInfo {
+    padding-block-start: 4rem;
+    padding-inline-start: 2rem;
+
+    .pageTitle {
+      font-size: 3rem;
+      margin-block-end: 2rem;
+    }
+
+    .description {
+      gap: 1rem;
+
+      p {
+        word-wrap: break-word;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+
+    .personImage,
+    .personInfo {
+      height: auto;
+    }
+
+    .personImage {
+      height: 290px;
+    }
+    
+    .personInfo {
+      padding-block-start: 2rem;
+      padding-inline-start: 0;
+    }
+  }
+}
