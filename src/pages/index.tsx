@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer/Footer";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
+// import avatar from '/assets/images/avatar.jpg';
 
 export default function Home() {
   const authorYearBorn = 1996;
@@ -19,7 +20,7 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.personImage}>
             <Image
-              src="/assets/images/avatar.jpg"
+              src={"/assets/images/avatar.jpg"}
               alt="Picture of the author"
               width={500}
               height={500}
@@ -31,15 +32,15 @@ export default function Home() {
 
             <div className={"flex jc-sb ai-center " + styles.description}>
               <p>
-                I'm <span className="bold">Mahmoud</span>, a{" "}
-                <span className="bold">Frontend engineer</span> based in Egypt,
+                I&apos;m <span className="bold">Mahmoud</span>, a
+                <span className="bold"> Frontend engineer</span> based in Egypt,
                 who enjoys building things that live on the internet.
               </p>
               <p>
-                I’m passionate about making{" "}
-                <span className="bold">scalable</span>,{" "}
-                <span className="bold">maintainable</span>,{" "}
-                <span className="bold">cutting-edge</span>
+                I&apos;m passionate about making
+                <span className="bold"> scalable</span>,
+                <span className="bold"> maintainable</span>,
+                <span className="bold"> cutting-edge </span>
                 web apps and <span className="bold">pixel-perfect</span> user
                 interfaces that create enjoyable experiences for the users. I
                 like working on interesting and challenging products that have a
