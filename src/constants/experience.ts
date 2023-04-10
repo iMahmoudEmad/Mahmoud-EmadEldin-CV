@@ -8,7 +8,7 @@ interface ExperienceI {
     link: string;
   };
   location: string;
-  responsibility: string[];
+  responsibilities: string[];
 }
 
 export const experiences: ExperienceI[] = [
@@ -22,7 +22,7 @@ export const experiences: ExperienceI[] = [
       link: "https://kashier.io",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Architecture long term plan with Angular stack",
       "Architecture refactor plan following best practices and code standards & make reusable component and private NPM packages",
       "Lead Frontend process",
@@ -49,7 +49,7 @@ export const experiences: ExperienceI[] = [
       link: "https://www.el-dokan.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Architecture long-term plan with React stack",
       "Architecture refactor plan following best practices and code standards & make reusable component and NPM packages",
       "Lead marketing requirements and changes in the SAAS project and PWA",
@@ -75,7 +75,7 @@ export const experiences: ExperienceI[] = [
       link: "https://www.areebgroup.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Revamped and Refactored invesna.com following best practices and code standards",
       "Migrate the existing Angular v5 to Angular v12 and RxJS v5 to v6",
       "Participated in creating CI/CD pipeline on Microsoft Azure to automate building and deploying web apps on AWS",
@@ -104,7 +104,7 @@ export const experiences: ExperienceI[] = [
       link: "https://coatconnect.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Acting as a Technical Team Lead",
       "Code review",
       "Planning",
@@ -126,7 +126,7 @@ export const experiences: ExperienceI[] = [
       link: "https://www.hotelgate.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Revamp the website to fit the new business requirements",
       "SEO optimization",
       "Making weekly sessions with the Frontend team to get in touch",
@@ -144,7 +144,7 @@ export const experiences: ExperienceI[] = [
       link: "http://www.amit-software.com",
     },
     location: "Cairo, Egypt",
-    responsibility: ["Code review", "SEO optimization", "Team Planning"],
+    responsibilities: ["Code review", "SEO optimization", "Team Planning"],
   },
   {
     from: "Jun 2017",
@@ -156,7 +156,7 @@ export const experiences: ExperienceI[] = [
       link: "https://anspire.agency",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Convert PSD to HTML & CSS & jQuery",
       "Security Testing reports",
       "Build Grunt.js workflow",
@@ -176,7 +176,7 @@ export const experiences: ExperienceI[] = [
       link: "https://mediapanarab.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Convert PSD to HTML & CSS & jQuery",
       "Security Testing reports",
       "Build Grunt.js workflow",
@@ -196,7 +196,7 @@ export const experiences: ExperienceI[] = [
       link: "https://nerdsarena.com",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Convert PSD to HTML & CSS & jQuery",
       "Security Testing reports",
       "Work with Pug.js & SCSS",
@@ -214,7 +214,7 @@ export const experiences: ExperienceI[] = [
       link: "",
     },
     location: "Cairo, Egypt",
-    responsibility: [
+    responsibilities: [
       "Convert PSD to HTML & CSS & jQuery",
       "Work with bootstrap",
       "Speed test report Weekly",

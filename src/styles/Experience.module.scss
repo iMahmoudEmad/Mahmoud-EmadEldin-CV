@@ -1,17 +1,18 @@
 .content {
   max-width: 700px;
   margin-inline: auto;
+  font-size: 0.875rem;
 
   .experience {
-    margin-block-end: 1.5rem;
+    margin-block-end: 2rem;
 
     .start,
     .role {
-      color: var(--font-gray-color);
       text-transform: capitalize;
     }
 
     .start {
+      color: var(--font-gray-color);
       min-width: 200px;
     }
 
@@ -26,16 +27,60 @@
 
     .end {
       padding-inline-start: 1.5rem;
+      max-width: 500px;
+
+      .role,
+      .responsibilities {
+        color: var(--font-gray-color-secondary);
+      }
 
       .role {
         display: block;
-        font-size: 0.875rem;
-        margin-block-start: .25rem;
+        margin-block-start: 0.25rem;
+      }
+
+      .responsibilities {
+        gap: 0.5rem;
+        margin-block-start: 1rem;
+
+        .responsability {
+          display: block;
+          width: 100%;
+
+          .dash {
+            display: inline-block;
+            margin-inline-end: 0.5rem;
+          }
+  
+          .responsabilityContent {
+            &::first-letter {
+              text-transform: capitalize;
+            }
+  
+            &:after {
+              content: ".";
+            }
+          }
+        }
       }
     }
   }
 
   @media screen and (max-width: 768px) {
     width: calc(100% - 2rem);
+
+    .experience {
+      .from {
+        min-width: auto;
+      }
+
+      .start {
+        width: 100%;
+      }
+
+      .end {
+        padding-inline-start: 0;
+      }
+    }
   }
 }

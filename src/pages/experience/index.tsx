@@ -32,6 +32,17 @@ export default function Home() {
                 </Link>
 
                 <span className={styles.role}>{experience.contract}</span>
+
+                <ul className={styles.responsibilities}>
+                  {experience.responsibilities.map((responsability) => (
+                    <li className={styles.responsability} key={v4()}>
+                      <span className={styles.dash}>-</span>
+                      <span className={styles.responsabilityContent}>
+                        {responsability}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
