@@ -23,14 +23,14 @@ export default function Home() {
             <div className={"flex " + styles.experience} key={v4()}>
               <div className={styles.start}>
                 <span className={styles.from}>{experience.from}</span>
-                <span className={styles.space}> — </span>
+                <span className={styles.space}>-</span>
                 <span>{experience.to}</span>
               </div>
               <div className={styles.end}>
                 <Link href={experience.company.link}>
                   {experience.role} at {experience.company.name}
                 </Link>
-                
+
                 <span className={styles.role}>{experience.contract}</span>
               </div>
             </div>
