@@ -6,11 +6,12 @@
   .personImage,
   .personInfo {
     width: 100%;
+    min-height: 500px;
     height: 70vh;
   }
 
   .personImage {
-    aspect-ratio: auto 916 / 1328;
+    aspect-ratio: 1/1;
     object-fit: cover;
     mix-blend-mode: color-burn;
 
@@ -50,9 +51,10 @@
     }
 
     .personImage {
+      min-height: 290px;
       height: 290px;
     }
-    
+
     .personInfo {
       padding-block-start: 2rem;
       padding-inline-start: 0;
