@@ -1,0 +1,19 @@
+.content {
+  max-width: 700px;
+  margin-inline: auto;
+
+  .experience {
+    .start {
+      color: var(--font-gray-color);
+      text-transform: capitalize;
+    }
+
+    .end {
+      padding-inline-start: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 2rem);
+  }
+}
