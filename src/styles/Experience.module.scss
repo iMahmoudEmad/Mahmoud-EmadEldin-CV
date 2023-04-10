@@ -3,13 +3,33 @@
   margin-inline: auto;
 
   .experience {
-    .start {
+    margin-block-end: 1.5rem;
+
+    .start,
+    .role {
       color: var(--font-gray-color);
       text-transform: capitalize;
     }
 
+    .start {
+      min-width: 200px;
+    }
+
+    .from {
+      min-width: 77px;
+      display: inline-block;
+    }
+
+    .space {
+      padding-inline: 0.5rem;
+    }
+
     .end {
       padding-inline-start: 1.5rem;
+
+      .role{
+        display: block;
+      }
     }
   }
 

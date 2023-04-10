@@ -6,6 +6,7 @@ import styles from "../../styles/Experience.module.scss";
 import { experiences } from "@/constants/experience";
 const inter = Inter({ subsets: ["latin"] });
 import { v4 } from "uuid";
+import Link from "next/link";
 
 export default function Home() {
   const authorYearBorn = 1996;
@@ -18,18 +19,22 @@ export default function Home() {
 
       <main className={"main full-w " + inter.className}>
         <div className={styles.content}>
-            {experiences.map((experience) =>
-                <div className={'flex ai-center ' + styles.experience} key={v4()}>
-                  <div className={styles.start}>
-                    {experience.from}
-                    <span> — </span>
-                    {experience.to}
-                  </div>
-                  <div className={styles.end}>
-                    {experience.company.name}
-                  </div>
-                </div>
-            )}
+          {experiences.map((experience) => (
+            <div className={"flex " + styles.experience} key={v4()}>
+              <div className={styles.start}>
+                <span className={styles.from}>{experience.from}</span>
+                <span className={styles.space}> — </span>
+                <span>{experience.to}</span>
+              </div>
+              <div className={styles.end}>
+                <Link href={experience.company.link}>
+                  {experience.role} at {experience.company.name}
+                </Link>
+                
+                <span className={styles.role}>{experience.contract}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </main>
 
