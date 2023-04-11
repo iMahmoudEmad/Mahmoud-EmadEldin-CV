@@ -35,12 +35,15 @@ export default function Home() {
 
                 <ul className={styles.responsibilities}>
                   {experience.responsibilities.map((responsability) => (
-                    <li className={styles.responsability} key={v4()}>
+                    <div
+                      key={v4()}
+                      className={"flex ai-center " + styles.responsability}
+                    >
                       <span className={styles.dash}>-</span>
-                      <span className={styles.responsabilityContent}>
-                        {responsability}
-                      </span>
-                    </li>
+                      <li className={styles.responsabilityContent}>
+                        <span>{responsability}.</span>
+                      </li>
+                    </div>
                   ))}
                 </ul>
               </div>

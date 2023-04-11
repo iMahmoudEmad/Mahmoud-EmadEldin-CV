@@ -5,7 +5,6 @@ import { Footer } from "@/components/footer/Footer";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
-// import avatar from '/assets/images/avatar.jpg';
 
 export default function Home() {
   const authorYearBorn = 1996;

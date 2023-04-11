@@ -12,7 +12,7 @@ export const SiteHead = () => {
       <meta name="creator" content={author} />
       <meta name="publisher" content="Vercel" />
       <meta name="keywords" content={position} />
-      <meta name="theme-color" content="#FFF" />
+      <meta name="theme-color" content="var(--white-color)" />
       <meta name="generator" content="Nextjs 13.2.4" />
 
       <meta name="twitter:site" content={username} />

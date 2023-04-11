@@ -17,7 +17,6 @@
     }
 
     .from {
-      min-width: 77px;
       display: inline-block;
     }
 
@@ -29,9 +28,13 @@
       padding-inline-start: 1.5rem;
       max-width: 500px;
 
+      a {
+        text-transform: inherit;
+      }
+
       .role,
       .responsibilities {
-        color: var(--font-gray-color-secondary);
+        // colo/r: var(--font-gray-color-secondary);
       }
 
       .role {
@@ -44,21 +47,21 @@
         margin-block-start: 1rem;
 
         .responsability {
-          display: block;
           width: 100%;
 
           .dash {
+            width: 0.5rem;
+            height: 100%;
             display: inline-block;
             margin-inline-end: 0.5rem;
           }
-  
+
           .responsabilityContent {
-            &::first-letter {
+            display: inline-block;
+            width: calc(100% - 1rem);
+
+            &:first-letter {
               text-transform: capitalize;
-            }
-  
-            &:after {
-              content: ".";
             }
           }
         }
