@@ -11,20 +11,20 @@ export const pages: PagesI[] = [
     link: "/",
   },
   {
-    name: "skills",
-    id: "skills",
-    link: "skills",
-  },
-  {
     name: "experience",
     id: "experience",
     link: "experience",
   },
   {
-    name: "projects",
-    id: "projects",
-    link: "projects",
+    name: "skills",
+    id: "skills",
+    link: "skills",
   },
+  // {
+  //   name: "projects",
+  //   id: "projects",
+  //   link: "projects",
+  // },
   {
     name: "CV",
     id: "cv",

@@ -33,7 +33,7 @@ export const Navbar = () => {
 
           <div className="flex ai-center">
             <ul className={styles.pages + " " + styles.me2}>
-              {pages.slice(1, 4).map((page) => (
+              {pages.slice(1, 3).map((page) => (
                 <li
                   className={styles.pageName + " " + styles.list}
                   key={page.id}
