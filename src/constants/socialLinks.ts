@@ -9,19 +9,19 @@ export const socialMedia: SocialMediaI[] = [
   {
     name: "twitter",
     id: "twitter",
-    link: "https://twitter.com/imahmoudemad",
+    link: "/twitter",
     isIconShown: true,
   },
   {
     name: "linkedIn",
     id: "linkedIn",
-    link: "https://www.linkedin.com/in/imahmoudemad",
+    link: "/linkedin",
     isIconShown: true,
   },
   {
     name: "github",
     id: "github",
-    link: "https://github.com/iMahmoudEmad",
+    link: "/github",
     isIconShown: true,
   },
 ];

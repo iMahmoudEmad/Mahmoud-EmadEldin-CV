@@ -216,7 +216,7 @@ export const experiences: ExperienceI[] = [
     location: "Cairo, Egypt",
     responsibilities: [
       "Convert PSD to HTML & CSS & jQuery",
-      "Work with bootstrap",
+      "Work with Bootstrap",
       "Speed test report Weekly",
       "SEO optimization",
     ],
