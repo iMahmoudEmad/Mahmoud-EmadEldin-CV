@@ -16,7 +16,11 @@ export const Footer = () => {
           <ul>
             {pages.map((page) => (
               <li key={page.id}>
-                <Link href={page.link} id={page.id}>
+                <Link
+                  href={page.link}
+                  target={page.name === "CV" ? "_blank" : "_self"}
+                  id={page.id}
+                >
                   {page.name}
                 </Link>
               </li>
