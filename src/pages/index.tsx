@@ -42,9 +42,9 @@ export default function Home() {
                 <span className="bold"> maintainable</span>,
                 <span className="bold"> cutting-edge </span>
                 web apps and <span className="bold">pixel-perfect</span> user
-                interfaces that create enjoyable experiences for the users. I
+                interfaces that create enjoyable user experiences. I
                 like working on interesting and challenging products that have a
-                good impact and make the users life easier.
+                good impact and make the user&apos;s life easier.
               </p>
             </div>
 
