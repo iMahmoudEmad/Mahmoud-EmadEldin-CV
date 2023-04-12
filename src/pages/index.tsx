@@ -18,14 +18,13 @@ export default function Home() {
 
       <main className={"main full-w " + inter.className}>
         <div className={styles.content}>
-          <div className={styles.personImage}>
             <Image
+            className={styles.personImage}
               src={"/assets/images/avatar.jpg"}
               alt="Picture of the author"
               width={500}
               height={500}
             />
-          </div>
 
           <div className={styles.personInfo}>
             <h2 className={"bold " + styles.pageTitle}>Hello!</h2>
