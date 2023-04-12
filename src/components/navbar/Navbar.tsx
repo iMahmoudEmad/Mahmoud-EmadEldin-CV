@@ -24,48 +24,53 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className={styles.navbar + " " + inter.className}>
-      <div className={styles.content + " full-w"}>
-        <h1 className={styles.title}>
-          <Link href="/">Mahmoud Emad</Link>
-        </h1>
+    <header className={styles.navbar + " " + inter.className}>
+      <nav>
+        <div className={styles.content + " full-w"}>
+          <h1 className={styles.title}>
+            <Link href="/">Mahmoud Emad</Link>
+          </h1>
 
-        <div className="flex ai-center">
-          <ul className={styles.pages + " " + styles.me2}>
-            {pages.slice(1, 4).map((page) => (
-              <li className={styles.pageName + " " + styles.list} key={page.id}>
-                <Link href={page.link} id={page.id}>
-                  <span className={styles.listIcon}>
-                    {page.name === "skills" && <AiOutlineCodeSandbox />}
-                    {page.name === "experience" && <MdWorkspaces />}
-                    {page.name === "projects" && <SiDocsdotrs />}
-                  </span>
-                  {page.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="flex ai-center">
+            <ul className={styles.pages + " " + styles.me2}>
+              {pages.slice(1, 4).map((page) => (
+                <li
+                  className={styles.pageName + " " + styles.list}
+                  key={page.id}
+                >
+                  <Link href={page.link} id={page.id}>
+                    <span className={styles.listIcon}>
+                      {page.name === "skills" && <AiOutlineCodeSandbox />}
+                      {page.name === "experience" && <MdWorkspaces />}
+                      {page.name === "projects" && <SiDocsdotrs />}
+                    </span>
+                    {page.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          <ul className={styles.pages + " " + styles.me1}>
-            {socialMedia.map((social) => (
-              <li className={styles.list} key={social.id}>
-                <Link href={social.link} target="_blank" id={social.id}>
-                  <span className={styles.listIcon}>
-                    {social.name === "twitter" && <FiTwitter />}
-                    {social.name === "linkedIn" && <FaLinkedin />}
-                    {social.name === "github" && <BsGithub />}
-                  </span>
-                </Link>
+            <ul className={styles.pages + " " + styles.me1}>
+              {socialMedia.map((social) => (
+                <li className={styles.list} key={social.id}>
+                  <Link href={social.link} target="_blank" id={social.id}>
+                    <span className={styles.listIcon}>
+                      {social.name === "twitter" && <FiTwitter />}
+                      {social.name === "linkedIn" && <FaLinkedin />}
+                      {social.name === "github" && <BsGithub />}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+              <li className={styles.list} onClick={setColor}>
+                <span className={styles.listIcon}>
+                  <MdLightMode />
+                </span>
               </li>
-            ))}
-            <li className={styles.list} onClick={setColor}>
-              <span className={styles.listIcon}>
-                <MdLightMode />
-              </span>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };

@@ -4,6 +4,7 @@ import { SiteHead } from "@/components/SiteHead";
 import { Footer } from "@/components/footer/Footer";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -45,6 +46,14 @@ export default function Home() {
                 like working on interesting and challenging products that have a
                 good impact and make the users life easier.
               </p>
+            </div>
+
+            <div className={styles.cv}>
+              <Link href="/cv">
+                <span className={styles.underlineOffset}>
+                  Open to work from now
+                </span>
+              </Link>
             </div>
           </div>
         </div>

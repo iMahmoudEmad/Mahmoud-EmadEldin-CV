@@ -40,6 +40,20 @@
         line-height: 1.5rem;
       }
     }
+
+    .cv {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: var(--gray-background-color);
+      margin-block-start: 1rem;
+      border: 1px solid #ccc;
+      text-decoration: underline;
+      
+      .underlineOffset {
+        text-transform: initial;
+        text-underline-offset: 0.25rem;
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {

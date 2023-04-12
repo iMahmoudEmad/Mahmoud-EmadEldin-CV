@@ -27,7 +27,7 @@ export default function Home() {
                 <span>{experience.to}</span>
               </div>
               <div className={styles.end}>
-                <Link href={experience.company.link}>
+                <Link href={experience.company.link || "#"}>
                   {experience.role} at {experience.company.name}
                 </Link>
 
