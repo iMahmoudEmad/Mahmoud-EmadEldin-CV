@@ -8,9 +8,6 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const authorYearBorn = 1996;
-  const authorAge = new Date().getFullYear() - authorYearBorn;
-
   return (
     <>
       <SiteHead />

@@ -32,8 +32,6 @@ export const Navbar = () => {
 
   return (
     <header className={styles.navbar + " " + inter.className}>
-      theme:{theme}
-
       <nav>
         <div className={styles.content + " full-w"}>
           <h1 className={styles.title}>
