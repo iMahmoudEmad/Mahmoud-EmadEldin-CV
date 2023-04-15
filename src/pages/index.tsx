@@ -15,13 +15,13 @@ export default function Home() {
 
       <main className={"main full-w " + inter.className}>
         <div className={styles.content}>
-            <Image
+          <Image
             className={styles.personImage}
-              src={"/assets/images/mahmoud.jpg"}
-              alt="Picture of the author"
-              width={500}
-              height={500}
-            />
+            src={"/assets/images/mahmoud.jpg"}
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
 
           <div className={styles.personInfo}>
             <h2 className={"bold " + styles.pageTitle}>Hello!</h2>
@@ -38,9 +38,9 @@ export default function Home() {
                 <span className="bold"> maintainable</span>,
                 <span className="bold"> cutting-edge </span>
                 web apps and <span className="bold">pixel-perfect</span> user
-                interfaces that create enjoyable user experiences. I
-                like working on interesting and challenging products that have a
-                good impact and make the user&apos;s life easier.
+                interfaces that create enjoyable user experiences. I like
+                working on interesting and challenging products that have a good
+                impact and make the user&apos;s life easier.
               </p>
             </div>
 

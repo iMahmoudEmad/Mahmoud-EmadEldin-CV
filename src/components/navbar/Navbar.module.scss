@@ -23,6 +23,10 @@
     }
   }
 
+  .navListBottom {
+    display: none;
+  }
+
   .title {
     font-size: 1.25rem;
   }
@@ -78,8 +82,36 @@
   }
 
   @media screen and (max-width: 768px) {
-    .pageName {
+    .listNav {
       display: none;
+    }
+
+    .navListBottom {
+      display: block;
+      border-block-start: 1px solid var(--border-color);
+      width: 100%;
+      position: fixed;
+      inset-block-end: 0;
+      inset-inline-start: 0;
+      background-color: rgb(var(--white-color));
+      padding: 1rem;
+
+      .mobileList {
+        gap: 0;
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+
+        .list {
+          line-height: initial;
+          width: 25%;
+
+          .listIcon {
+            display: block;
+            margin-inline-end: 0 !important;
+          }
+        }
+      }
     }
   }
 }
