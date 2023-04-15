@@ -20,7 +20,7 @@ export default function Home() {
         <div className={styles.content}>
             <Image
             className={styles.personImage}
-              src={"/assets/images/avatar.jpg"}
+              src={"/assets/images/mahmoud.jpg"}
               alt="Picture of the author"
               width={500}
               height={500}
