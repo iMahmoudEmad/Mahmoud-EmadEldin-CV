@@ -10,7 +10,7 @@ import { AiOutlineCodeSandbox } from "react-icons/ai";
 import { MdWorkspaces } from "react-icons/md";
 import { socialMedia } from "@/constants/socialLinks";
 import { pages } from "@/constants/pages";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +20,20 @@ export const Navbar = () => {
   function setColor() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
+    window.localStorage.setItem('theme', newTheme);
     document.documentElement.className = newTheme;
   }
+  
+  useEffect(() => {
+    let localTheme: any = window.localStorage.getItem('theme');
+    setTheme(localTheme);
+    document.documentElement.className = localTheme;
+  }, []);
 
   return (
     <header className={styles.navbar + " " + inter.className}>
+      theme:{theme}
+
       <nav>
         <div className={styles.content + " full-w"}>
           <h1 className={styles.title}>

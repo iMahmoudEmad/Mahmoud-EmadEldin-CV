@@ -16,6 +16,15 @@
     color-scheme: dark;
   }
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white-color:24,24,27;
+    --font-color: #e5e7eb;
+    --border-color: #a1a1a1;
+    --gray-background-color:#27272a;
+    color-scheme: dark;
+  }
+}
 
 * {
   box-sizing: border-box;
