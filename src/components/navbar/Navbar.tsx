@@ -26,9 +26,14 @@ export const Navbar = () => {
   }
 
   useEffect(() => {
+    const matchMedia: any = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
     let localTheme: any = window.localStorage.getItem("theme");
-    setTheme(localTheme);
-    document.documentElement.className = localTheme;
+
+    localTheme ? setTheme(localTheme) : setTheme(matchMedia);
+    document.documentElement.className = localTheme || matchMedia;
   }, []);
 
   return (
