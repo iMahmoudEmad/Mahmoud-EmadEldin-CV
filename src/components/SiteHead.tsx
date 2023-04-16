@@ -26,6 +26,7 @@ export const SiteHead = () => {
       <meta property="og:type" content="website" />
 
       <meta name="apple-mobile-web-app-title" content={author} />
+      <link rel="apple-touch-icon" href="/assets/images/mahmoud.jpg" />
       <meta name="description" content={position + " player"} />
 
       <title>Mahmoud Emad</title>
