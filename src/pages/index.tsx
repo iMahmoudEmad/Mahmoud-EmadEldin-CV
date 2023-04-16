@@ -21,6 +21,7 @@ export default function Home() {
             alt="Picture of the author"
             width={500}
             height={500}
+            loading="lazy"
           />
 
           <div className={styles.personInfo}>
