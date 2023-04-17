@@ -69,6 +69,7 @@ export const Navbar = () => {
               {socialMedia.map((social) => (
                 <li className={styles.list} key={social.id}>
                   <Link href={social.link} target="_blank" id={social.id}>
+                    <span className="sr-only">{social.name}</span>
                     <span className={styles.listIcon}>
                       {social.name === "twitter" && <FiTwitter />}
                       {social.name === "linkedIn" && <FaLinkedin />}
