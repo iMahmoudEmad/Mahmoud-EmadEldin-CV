@@ -53,7 +53,7 @@ export const Navbar = () => {
                   className={styles.pageName + " " + styles.list}
                   key={page.id}
                 >
-                  <Link href={page.link} id={page.id}>
+                  <Link href={page.link} id={"desktop-page-" + page.id}>
                     <span className={styles.listIcon}>
                       {page.name === "skills" && <AiOutlineCodeSandbox />}
                       {page.name === "experience" && <MdWorkspaces />}
@@ -88,7 +88,7 @@ export const Navbar = () => {
               <ul className={styles.pages + " " + styles.mobileList}>
                 {pages.map((page) => (
                   <li className={styles.list} key={page.id}>
-                    <Link href={page.link} id={page.id}>
+                    <Link href={page.link} id={"nav-" + page.id}>
                       <span className={styles.listIcon}>
                         {page.name === "home" && <AiOutlineHome />}
                         {page.name === "skills" && <AiOutlineCodeSandbox />}
