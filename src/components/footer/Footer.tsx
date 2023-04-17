@@ -17,9 +17,10 @@ export const Footer = () => {
             {pages.map((page) => (
               <li key={page.id}>
                 <Link
+                  aria-label={page.name}
                   href={page.link}
                   target={page.name === "CV" ? "_blank" : "_self"}
-                  id={page.id}
+                  id={"footer-" + page.id}
                 >
                   {page.name}
                 </Link>
@@ -29,7 +30,12 @@ export const Footer = () => {
           <ul>
             {socialMedia.map((social) => (
               <li key={social.id}>
-                <Link href={social.link} target="_blank" id={social.id}>
+                <Link
+                  aria-label={social.name}
+                  href={social.link}
+                  target="_blank"
+                  id={"footer-" + social.id}
+                >
                   {social.name}
                 </Link>
               </li>
