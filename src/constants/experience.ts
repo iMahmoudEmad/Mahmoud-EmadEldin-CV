@@ -13,13 +13,13 @@ interface ExperienceI {
 
 export const experiences: ExperienceI[] = [
   {
-    from: "May 2022",
+    from: "Sep 2023",
     to: "now",
     contract: "full-time",
     role: "Frontend Lead",
     company: {
-      name: "Kashier.io",
-      link: "https://kashier.io",
+      name: "Youxel",
+      link: "https://youxel.com/",
     },
     location: "Cairo, Egypt",
     responsibilities: [
@@ -40,10 +40,37 @@ export const experiences: ExperienceI[] = [
     ],
   },
   {
+    from: "May 2022",
+    to: "Aug 2023",
+    contract: "full-time",
+    role: "Frontend Lead",
+    company: {
+      name: "Kashier.io",
+      link: "https://kashier.io",
+    },
+    location: "Cairo, Egypt",
+    responsibilities: [
+      "Architecture long term plan with React/Angular stack",
+      "Architecture refactor plan following best practices and code standards & make reusable component and private NPM packages",
+      "Lead Frontend process",
+      "Participated in creating CI/CD pipeline on Bitbucket to automate building and deploying web apps",
+      "Reduced the Merchant portal loading time by adding (Service workers, GZIP compress, and another awesome stuff).",
+      "Monorepo Architecture plan in the newest theme",
+      "Unit testing with React/Angular",
+      "Integration test using cypress (basics)",
+      "SEO optimization",
+      "Leading Frontend Pull Requests to make sure they follow best practices and code standards",
+      "Worked in an Agile based environment",
+      "Security checks for Merchant & Agent portals",
+      "Leading the interviews for Frontend positions",
+      "Leading code analysis updates with Sonarqube",
+    ],
+  },
+  {
     from: "Oct 2021",
     to: "May 2022",
     contract: "full-time",
-    role: "Senior Frontend Engineer",
+    role: "Frontend Lead",
     company: {
       name: "El-dokan",
       link: "https://www.el-dokan.com",

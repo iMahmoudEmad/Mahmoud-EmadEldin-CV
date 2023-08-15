@@ -9,19 +9,19 @@ export const socialMedia: SocialMediaI[] = [
   {
     name: "twitter",
     id: "twitter",
-    link: "/twitter",
+    link: "#twitter",
     isIconShown: true,
   },
   {
     name: "linkedIn",
     id: "linkedIn",
-    link: "/linkedin",
+    link: "#linkedin",
     isIconShown: true,
   },
   {
     name: "github",
     id: "github",
-    link: "/github",
+    link: "#github",
     isIconShown: true,
   },
 ];

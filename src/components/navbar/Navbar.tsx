@@ -68,7 +68,7 @@ export const Navbar = () => {
             <ul className={styles.pages + " " + styles.me1}>
               {socialMedia.map((social) => (
                 <li className={styles.list} key={social.id}>
-                  <Link href={social.link} target="_blank" id={social.id}>
+                  <Link href={social.link} target="_blank" id={social.id} aria-label={social.name}>
                     <span className="sr-only">{social.name}</span>
                     <span className={styles.listIcon}>
                       {social.name === "twitter" && <FiTwitter />}

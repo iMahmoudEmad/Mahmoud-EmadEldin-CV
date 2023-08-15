@@ -10,7 +10,6 @@ import Link from "next/link";
 
 export default function Home() {
   const authorYearBorn = 1996;
-  const authorAge = new Date().getFullYear() - authorYearBorn;
 
   return (
     <>
